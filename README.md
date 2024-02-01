@@ -53,7 +53,7 @@ Visit the deployed website [by clicking here!]()
 
 ### Credits
 
-##### Ferny Castro
+#### Ferny Castro
 
 🔗 [LinkedIn](https://www.linkedin.com/in/ferny-castro/)
 
