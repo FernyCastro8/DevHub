@@ -1,0 +1,12 @@
+{
+  "name": "devhub",
+  "version": "1.0.0",
+  "description": "![DevHub_logo](https://github.com/FernyCastro8/DevHub/assets/124219457/6427ff89-af56-4d4a-87e9-198fbde7e7fc)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
