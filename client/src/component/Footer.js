@@ -1,4 +1,9 @@
-import React from "react";
+// import React from "react";
+
+const links = {
+    id: 0,
+    child: 'About'
+}
 
 function Footer() {
     return (
