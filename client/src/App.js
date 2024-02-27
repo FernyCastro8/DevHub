@@ -1,6 +1,7 @@
 
 import Navbar from "./component/Navbar"
 import Footer from "./component/Footer"
+import Header from "./component/Header";
 
 
 
@@ -9,6 +10,8 @@ function App() {
     <div className="App">
 
       <Navbar />
+
+      <Header />
 
       <Footer />
 
