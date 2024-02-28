@@ -1,4 +1,4 @@
-// import { Route, Routes } from 'react-router-dom'
+import { Route, Routes } from 'react-router-dom'
 
 import Navbar from "./component/Navbar"
 import Footer from "./component/Footer"
@@ -10,9 +10,9 @@ function App() {
   return (
     <div className="App">
 
-      {/* <Routes>
+      <Routes>
         <Route path='/' element={<App />} />
-      </Routes> */}
+      </Routes>
 
 
       <Navbar />
