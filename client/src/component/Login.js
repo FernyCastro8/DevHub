@@ -3,6 +3,7 @@ import React from 'react';
 const Login = () => {
     return (
         <div>
+            <h1>Login</h1>
 
             <form class="max-w-sm mx-auto">
                 <div class="mb-5">

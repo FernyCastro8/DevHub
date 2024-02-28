@@ -3,7 +3,7 @@ import React from 'react';
 const Register = () => {
     return (
         <div>
-
+            <h1>Register</h1>
 
             <form class="max-w-sm mx-auto">
                 <div class="mb-5">

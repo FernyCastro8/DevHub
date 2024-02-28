@@ -1,9 +1,9 @@
-// import React from "react";
 
-const links = {
-    id: 0,
-    child: 'About'
-}
+
+// const links = {
+//     index: true,
+//     child: 'About'
+// }
 
 function Footer() {
     return (

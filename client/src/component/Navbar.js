@@ -3,10 +3,12 @@
 import logo from "../assest/DevHub-logo.png"
 
 // // Looping navBar links
-// const links = {
-//     href: '',
-
-// }
+// const links = [
+//     {
+//         index: true,
+//         href: '',
+//     }
+// ];
 
 
 function Navbar() {
