@@ -1,9 +1,10 @@
 // import { Route, Routes } from 'react-router-dom'
 
-import Navbar from "./component/Navbar"
-import Footer from "./component/Footer"
-import Header from "./component/Header";
+// import Navbar from "./component/Navbar"
+// import Footer from "./component/Footer"
+// import Header from "./component/Header"
 
+import Login from "./pages/Login";
 
 
 function App() {
@@ -14,10 +15,13 @@ function App() {
         <Route path='/' element={<App />} />
       </Routes> */}
 
-
+      {/* 
       <Navbar />
       <Header />
-      <Footer />
+      <Footer /> */}
+
+      <Login />
+
 
     </div>
   );
