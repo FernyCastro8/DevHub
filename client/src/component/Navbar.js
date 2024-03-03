@@ -1,10 +1,9 @@
 // import react from "react";
 import { Link } from 'react-router-dom'
 
-// import logo from "../assest/DevHub-logo.png"
-import logoTwo from "../assest/DevHub-logo-emoji.png"
+import logo from "../assest/DevHub-logo-emoji.png"
 
-// // Looping navBar links
+// Looping navBar links
 const links = [
     {
         id: 0,
@@ -19,12 +18,7 @@ const links = [
     {
         id: 2,
         elemente: 'Associates',
-        to: '/Associates',
-    },
-    {
-        id: 3,
-        elemente: 'Contact',
-        to: '/contact',
+        to: '/associates',
     },
 
 ];
@@ -37,19 +31,18 @@ function Navbar() {
             <div className="max-w-screen-xl flex items-center justify-between mx-auto p-4">
                 <div className="flex items-center space-x-3">
                     <a href="/" className="flex items-center space-x-3">
-                        <img src={logoTwo} className="h-8" alt="DevHub Logo" />
+                        <img src={logo} className="h-8" alt="DevHub Logo" />
                         <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white"></span>
                     </a>
                 </div>
 
-                <div className="flex md:order-2 items-center flex-row-reverse space-x-3 md:space-x-0">
-
+                <div className="flex md:order-2 items-center flex-row-reverse space-x-3 md:space-x-0 ">
                     <div className="hidden md:flex md:items-center md:w-auto md:order-1">
                         <ul className="flex flex-row font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 space-x-8 md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
                             {links.map(({ id, elemente, to }) =>
                                 <div key={id}>
                                     <Link to={to}>
-                                        <li className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">{elemente} </li>
+                                        <li className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700 ">{elemente} </li>
                                     </Link>
                                 </div>
                             )}
