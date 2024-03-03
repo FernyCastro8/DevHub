@@ -56,11 +56,11 @@ function Navbar() {
                         </ul>
                         <div className="">
                             <Link to='/login'>
-                                <button type="button" href="/login" className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 mx-2 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Login</button>
+                                <button type="button" class="text-white bg-gradient-to-r from-blue-500 via-blue-700 to-blue-800 hover:bg-gradient-to-br focus:ring-3 focus:outline-none dark:focus:ring-blue-800 shadow-lg shadow-blue-500/50 dark:shadow-lg dark:shadow-blue-700/20 font-medium rounded-lg text-sm px-4 py-2 text-center me-1 mb-1 ml-5 mr-3 ">Login</button>
                             </Link>
 
                             <Link to="/register">
-                                < button type="button" href="/register" className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Get started</button>
+                                < button type="button" className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-3 focus:outline-none font-medium rounded-lg text-sm px-4 py-2 text-center dark:bg-slate-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 dark:shadow-lg dark:shadow-slate-600/20">Get started</button>
                             </Link>
                         </div>
                     </div>
