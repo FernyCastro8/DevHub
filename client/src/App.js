@@ -4,8 +4,9 @@ import Navbar from "./component/Navbar"
 import Footer from "./component/Footer"
 // import Header from "./component/Header"
 // import Login from "./pages/Login";
+// import Register from "./pages/Register";
+// import Login from "./pages/Login";
 import Register from "./pages/Register";
-import Login from "./pages/Login";
 
 
 function App() {
@@ -19,7 +20,7 @@ function App() {
 
       <Navbar />
 
-      <Login />
+      <Register />
 
       <Footer />
 
