@@ -1,11 +1,11 @@
 import React from 'react'
 
-function Service_page() {
+function ServicePage() {
     return (
         <div className="">
-            <h1>Service_page</h1>
+            <h1>Service Page</h1>
         </div>
     )
 }
 
-export default Service_page
+export default ServicePage

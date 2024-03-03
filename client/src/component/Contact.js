@@ -4,16 +4,14 @@ export default function Contact() {
     return (
         <div>
             <div>
-                <h1>Contact</h1>
-
-                <section class="bg-white py-20 lg:py-[120px] overflow-hidden relative z-10">
+                <section class="bg-slate-800 py-20 lg:py-[120px] overflow-hidden relative z-10">
                     <div class="container">
                         <div class="flex flex-wrap lg:justify-between -mx-4">
-                            <div class="w-full lg:w-1/2 xl:w-6/12 px-4">
+                            <div class="w-full pl-14 lg:w-1/2 xl:w-6/12 px-4">
                                 <div class="max-w-[570px] mb-12 lg:mb-0">
-                                    <span class="block mb-4 text-base text-primary font-semibold">
+                                    {/* <span class="block mb-4 text-base text-primary font-semibold">
                                         Contact Us
-                                    </span>
+                                    </span> */}
                                     <h2
                                         class="
                   text-dark
@@ -21,23 +19,25 @@ export default function Contact() {
                   uppercase
                   font-bold
                   text-[32px]
+                  text-white
                   sm:text-[40px]
                   lg:text-[36px]
                   xl:text-[40px]
+                  flex justify-center
                   "
                                     >
                                         GET IN TOUCH WITH US
                                     </h2>
-                                    <p class="text-base text-body-color leading-relaxed mb-9">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                                        eius tempor incididunt ut labore et dolore magna aliqua. Ut enim
-                                        adiqua minim veniam quis nostrud exercitation ullamco
+                                    <p class="text-base text-white leading-relaxed mb-9">
+                                        Our dedicated team is here to address any questions or issues you may have regarding our services. Your satisfaction is our priority, and we are committed to providing a prompt and helpful response. Please feel free to share your thoughts, and we'll ensure your experience with us is nothing short of excellent.
                                     </p>
 
                                 </div>
                             </div>
+
+                            {/* form */}
                             <div class="w-full lg:w-1/2 xl:w-5/12 px-4">
-                                <div class="bg-white relative rounded-lg p-8 sm:p-12 shadow-lg">
+                                <div class="bg-white relative rounded-3xl p-8 sm:p-12 shadow-lg">
                                     <form>
                                         <div class="mb-6">
                                             <input
@@ -45,7 +45,7 @@ export default function Contact() {
                                                 placeholder="Your Name"
                                                 class="
                         w-full
-                        rounded
+                        rounded-lg
                         py-3
                         px-[14px]
                         text-body-color text-base
@@ -62,7 +62,7 @@ export default function Contact() {
                                                 placeholder="Your Email"
                                                 class="
                         w-full
-                        rounded
+                        rounded-lg
                         py-3
                         px-[14px]
                         text-body-color text-base
@@ -79,7 +79,7 @@ export default function Contact() {
                                                 placeholder="Your Phone"
                                                 class="
                         w-full
-                        rounded
+                        rounded-lg
                         py-3
                         px-[14px]
                         text-body-color text-base
@@ -96,7 +96,7 @@ export default function Contact() {
                                                 placeholder="Your Message"
                                                 class="
                         w-full
-                        rounded
+                        rounded-lg
                         py-3
                         px-[14px]
                         text-body-color text-base
@@ -112,10 +112,10 @@ export default function Contact() {
                                             <button
                                                 type="submit"
                                                 class="
-                        w-full
+
                         text-white
-                        bg-primary
-                        rounded
+                        bg-slate-600
+                        rounded-lg
                         border border-primary
                         p-3
                         transition

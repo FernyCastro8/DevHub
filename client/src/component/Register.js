@@ -29,13 +29,16 @@ function Register() {
                                 </div>
 
                                 <div className="flex items-start mb-5">
-                                    <Link to="login">
-                                        <label for="terms" className="ms-2 pt-3 text-sm font-medium text-gray-900 dark:text-gray-300">Already registered?
-                                            <a href="/login" className="text-blue-600 hover:underline dark:text-blue-500">    Login here</a></label>
-                                    </Link>
+                                    <label for="terms" className="ms-2 pt-3 text-sm font-medium text-gray-900 dark:text-gray-300">Already registered?
+                                        <Link to="/login"
+                                            className="text-blue-600 hover:underline dark:text-blue-500"> Loging here
+                                        </Link>
+                                    </label>
                                 </div>
                                 <Link to="/register">
-                                    <button onClick={onclick} type="submit" className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Register</button>
+                                    <button onClick={onclick}
+                                        type="submit"
+                                        className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Register</button>
                                 </Link>
                             </div>
                         </form>
