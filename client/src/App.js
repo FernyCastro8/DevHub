@@ -7,6 +7,7 @@ import Footer from "./component/Footer";
 // import Contact from './component/Contact';
 // import Login from './component/Login';
 // import Register from './component/Register';
+import NotFound from './component/NotFound'
 
 
 // Pages
@@ -17,6 +18,7 @@ import LoginPage from "./pages/LoginPage";
 import RegisterPage from "./pages/RegisterPage";
 import ContactPage from './pages/ContactPage';
 import NotFoundPage from './pages/NotFoundPage';
+
 
 function App() {
   return (
@@ -34,6 +36,7 @@ function App() {
 
 
       <Navbar />
+      {/* <NotFound /> */}
 
       <Footer />
 
