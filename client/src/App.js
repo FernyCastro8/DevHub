@@ -3,6 +3,8 @@ import { Route, Routes, } from 'react-router-dom';
 // Components
 import Navbar from "./component/Navbar";
 import Footer from "./component/Footer";
+// helper for testing **
+import Header2 from './component/Header2';
 
 
 // Pages
@@ -28,13 +30,9 @@ function App() {
         <Route path='/associates' element={< AssociatesPage />} />
         <Route path='/contact' element={<ContactPage />} />
         <Route path='*' element={<NotFoundPage />} />s
-
-        {/*  */}
-
       </Routes>
 
-
-      {/* <NotFound /> */}
+      <Header2 />
 
       <Footer />
     </div>

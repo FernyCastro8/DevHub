@@ -91,6 +91,7 @@ function Header() {
                         </section>
 
                         <div class="mt-32" />
+
                         {/* <hr className="my-6 border-2 border-gray-200 sm:mx-auto dark:border-gray-300 lg:my-8 " /> */}
                     </div>
 

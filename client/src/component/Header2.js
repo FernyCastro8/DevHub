@@ -1,34 +1,75 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
+
+// assets
+import img from '../assest/IMG_02.png'
+import img2 from '../assest/IMG_02.png'
+
+
 
 function Header2() {
     return (
+        <div className='bg-gray-100'>
 
-        <div class="m-auto max-w-6xl p-12">
-            <div class="flex flex-col md:flex-row">
-                <div class="md:w-1/2 max-w-md flex flex-col justify-center">
-                    <div class="md:text-5xl text-2xl uppercase font-black">Awesome tool for your future team</div>
-                    <div class="text-xl mt-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
-                    <div class="my-5 h-16">
-                        <div class="shadow-md font-medium py-2 px-4 text-yellow-100
-               cursor-pointer bg-yellow-600 hover:bg-yellow-500 rounded text-lg text-center w-48">Join us now</div>
+            {/* Developer section */}
+            <div name="developer section" className="m-auto max-w-6xl p-12  ">
+                <div className="flex flex-col md:flex-row">
+                    <div className="md:w-1/2 max-w-md flex flex-col justify-center">
+                        <div className="md:text-2xl text-lg uppercase font-black">For Developers</div>
+                        <div className="text-xl mt-4">
+                            Accelerate your career by joining our platform inovating Developers.
+                            <p className='pt-4'>Showcase your skills, connect with industry leaders, and unlock new opportunities that propel your coding journey to new heights.
+                            </p>
+                        </div>
+                        <div className="flex justify-center m-5">
+                            <Link to="/">
+                                <button className="shadow-md font-sm py-1 px-2 text-white cursor-pointer  bg-blue-600 hover:bg-blue-500 rounded-xl text-lg text-center ">Become a prospect
+                                </button>
+                            </Link>
+                        </div>
                     </div>
-                </div>
-                <div class="flex md:justify-end w-full md:w-1/2 -mt-5">
-                    <div class="bg-dots">
-                        <div class="shadow-2xl max-w-md z-10 rounded-full mt-6 ml-4">
-                            {/* <img alt="card img" class="rounded-t" src="https://s.spielwarenmesse.de/fileadmin/data_archive/Relaunch_Spielwarenmesse/magazine/header/20190618_Header_Memes.jpg"> */}
-                            <div class="text-2xl p-10 bg-white">
-                                {/* <img alt="quote"
-                                    class="float-left mr-1"
-                                    src="https://assets-global.website-files.com/5b5a66e9f3166b36708705fa/5cf8fb1f994fb7168d0d66fb_quote-intro.svg"
-                                > Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam */}
+
+                    <div className="flex md:justify-end w-full md:w-1/2 ">
+                        <div className="bg-dots">
+                            <div className="shadow-2xl max-w-md z-10 rounded-full mt-6 ml-4 ">
+                                <img src={img} alt="student-vector img" />
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
 
+                <hr className=" my-6 border-2 border-gray-200 sm:mx-auto dark:border-gray-200 lg:my-10 " />
+
+                {/* Employer section */}
+                <div name='employer section' className="flex flex-col md:flex-row ">
+
+                    <div className="flex md:justify-center w-full md:w-1/2 -mt-5">
+                        <div className="bg-dots">
+                            <div className="shadow-2xl max-w-md z-10 rounded-full mt-6 ml-4">
+                                <img className='' src={img2} alt="employer-vector img" />
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="md:w-1/2 max-w-md flex flex-col justify-center mt-10">
+                        <div className="md:text-2xl text-lg text-center uppercase font-black">For Employer</div>
+                        <div className="text-xl mt-4">
+                            Elevate your projects with our elite software developers who bring innovation and expertise to every line of code.
+                            <p className=' text-md pt-5'>Find your top-tier talent by showcasing your job openings or projects on our platform.</p>
+                        </div>
+                        <div className="flex justify-center m-5">
+                            <Link to="/">
+                                <button className="shadow-md font-sm py-1 px-2 text-white cursor-pointer  bg-blue-600 hover:bg-blue-500 rounded-xl text-lg text-center">Partner with us
+                                </button>
+                            </Link>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
     )
 }
 
