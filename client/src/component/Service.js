@@ -1,9 +1,13 @@
 import React from 'react'
+// import { Link } from 'react-router-dom'
+
 
 function Service() {
     return (
-        <div className="">
-            <h1>Service</h1>
+        <div name="service">
+
+            <div className="text-3xl flex justify-center">Service Component</div>
+
         </div>
     )
 }

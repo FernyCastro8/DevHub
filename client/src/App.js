@@ -1,13 +1,8 @@
-import { Route, Routes, Link } from 'react-router-dom';
+import { Route, Routes, } from 'react-router-dom';
 
 // Components
 import Navbar from "./component/Navbar";
 import Footer from "./component/Footer";
-// import Header from "./component/Header";
-// import Contact from './component/Contact';
-// import Login from './component/Login';
-// import Register from './component/Register';
-import NotFound from './component/NotFound'
 
 
 // Pages
@@ -23,6 +18,7 @@ import NotFoundPage from './pages/NotFoundPage';
 function App() {
   return (
     <div className="App">
+      <Navbar />
 
       <Routes>
         <Route path='/' element={<HomePage />} />
@@ -31,15 +27,16 @@ function App() {
         <Route path='/service' element={<ServicePage />} />
         <Route path='/associates' element={< AssociatesPage />} />
         <Route path='/contact' element={<ContactPage />} />
-        <Route path='*' element={<NotFoundPage />} />
+        <Route path='*' element={<NotFoundPage />} />s
+
+        {/*  */}
+
       </Routes>
 
 
-      <Navbar />
       {/* <NotFound /> */}
 
       <Footer />
-
     </div>
   );
 }
