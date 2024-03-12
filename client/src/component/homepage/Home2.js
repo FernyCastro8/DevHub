@@ -2,12 +2,12 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 
 // assets
-import img from '../assest/IMG_02.png'
-import img2 from '../assest/IMG_02.png'
+import img from '../../assest/IMG_02.png'
+import img2 from '../../assest/IMG_06.jpg'
 
 
 
-function Header2() {
+function Home2() {
     return (
         <div className='bg-gray-100'>
 
@@ -46,7 +46,7 @@ function Header2() {
                     <div className="flex md:justify-center w-full md:w-1/2 -mt-5">
                         <div className="bg-dots">
                             <div className="shadow-2xl max-w-md z-10 rounded-full mt-6 ml-4">
-                                <img className='' src={img2} alt="employer-vector img" />
+                                <img className='rounded-lg' src={img2} alt="employer-vector img" />
 
                             </div>
                         </div>
@@ -73,4 +73,4 @@ function Header2() {
     )
 }
 
-export default Header2
+export default Home2

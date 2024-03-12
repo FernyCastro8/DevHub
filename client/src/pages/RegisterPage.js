@@ -1,7 +1,7 @@
 import React from 'react'
 
 // Loading components
-import Register from '../component/Register'
+import Register from '../component/forms/Register'
 
 
 function RegisterPage() {

@@ -1,10 +1,10 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-import img from '../assest/IMG_04.png'
+import img from '../../assest/IMG_04.png'
 
 
-function Header() {
+function Home() {
     return (
         <div >
             <div>
@@ -104,4 +104,4 @@ function Header() {
     )
 }
 
-export default Header
+export default Home

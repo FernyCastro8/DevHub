@@ -4,7 +4,7 @@ import { Route, Routes, } from 'react-router-dom';
 import Navbar from "./component/Navbar";
 import Footer from "./component/Footer";
 // helper for testing **
-import Header2 from './component/Header2';
+
 
 
 // Pages
@@ -32,7 +32,7 @@ function App() {
         <Route path='*' element={<NotFoundPage />} />s
       </Routes>
 
-      <Header2 />
+      {/* Helpers */}
 
       <Footer />
     </div>

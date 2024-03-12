@@ -10,11 +10,11 @@ const links = [
         elemente: 'Home',
         to: '/',
     },
-    {
-        id: 1,
-        elemente: 'Service',
-        to: '/service',
-    },
+    // {
+    //     id: 1,
+    //     elemente: 'Service',
+    //     to: '/service',
+    // },
     {
         id: 2,
         elemente: 'Associates',

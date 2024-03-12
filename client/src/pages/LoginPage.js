@@ -1,7 +1,7 @@
 import React from 'react'
 
 // Loading componets
-import Login from '../component/Login'
+import Login from '../component/forms/Login'
 
 function LoginPage() {
     return (
