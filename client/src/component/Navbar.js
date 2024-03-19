@@ -10,11 +10,11 @@ const links = [
         elemente: 'Home',
         to: '/',
     },
-    // {
-    //     id: 1,
-    //     elemente: 'Service',
-    //     to: '/service',
-    // },
+    {
+        id: 1,
+        elemente: 'Service',
+        to: '/service',
+    },
     {
         id: 2,
         elemente: 'Associates',
@@ -38,7 +38,8 @@ function Navbar() {
 
                 <div className="flex md:order-2 items-center flex-row-reverse space-x-3 md:space-x-0 ">
                     <div className="hidden md:flex md:items-center md:w-auto md:order-1">
-                        <ul className="flex flex-row font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 space-x-8 md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+                        <ul className="flex flex-row font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 space-x-8 md:flex-row md:mt-0 md:border-0 md:bg-white  md:dark:bg-slate-900 dark:border-slate-700"
+                        >
                             {links.map(({ id, elemente, to }) =>
                                 <div key={id}>
                                     <Link to={to}>
