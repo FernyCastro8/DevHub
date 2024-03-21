@@ -29,19 +29,17 @@ and enter the following command:
 
 #### modules / packages
 
-- Concurrently 8.0.1
-- Nodemon 2.0.22
 - Node js 20.11.0
-- Mongoose 7.1.1
 - Express 4.18.3
+- Nodemon 3.1.0
+- React js
+- Mongoose 8.2.2
+- Dotenv 16.0.3
+- Concurrently 8.0.1
+- Day js  1.11.10
 <!-- - Express-session 1.17.3 -->
 <!-- - Cookie-parser  1.4.6 -->
 <!-- - Bcrypt 5.1.0 -->
-- Dotenv 16.0.3
-- React
-- React-dom
-- React-router-dom
-- React-scripts
 
 ---
 
