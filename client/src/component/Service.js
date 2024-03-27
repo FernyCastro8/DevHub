@@ -10,12 +10,12 @@ import { BsBriefcaseFill } from "react-icons/bs"; // suitcase icon
 function Service() {
     return (
         <div name="service">
-            <section class="h-screen w-screen bg-white dark:bg-gray-700 ">
+            <section class="h-screen w-screen bg-gray-100 ">
                 <div class="container px-6 py-10 mx-auto">
                     <div class="lg:flex lg:items-center">
                         <div class="w-full space-y-12 lg:w-1/2 ">
                             <div>
-                                <h1 class="text-3xl font-semibold text-gray-800 capitalize lg:text-4xl dark:text-white">Explore our awesome Service</h1>
+                                <h1 class="text-3xl font-semibold text-gray-900 capitalize lg:text-4xl ">Explore our awesome Service</h1>
 
                                 <div class="mt-2">
                                     <span class="inline-block w-40 h-1 rounded-full bg-blue-500"></span>
@@ -32,13 +32,17 @@ function Service() {
                                 </span>
 
                                 <div class="mt-4 md:mx-4 md:mt-0">
-                                    <h1 class="text-2xl font-semibold text-gray-700 capitalize dark:text-white">Developers</h1>
+                                    <h1 class="text-2xl font-semibold text-gray-900 capitalize ">Developers</h1>
 
-                                    <p class="mt-3 text-gray-500 dark:text-gray-300">
-                                        <li ClassName=""><span className='text-white text-lg'>Customizable Profile:</span> <p>Developers can create personalized profiles showcasing their skills, experience, education, and projects.</p>
+                                    <p class="mt-3 text-gray-800">
+                                        <li ClassName="">
+                                            <span className=' text-lg'>Customizable Profile:</span>
+                                            <p>Developers can create personalized profiles showcasing their skills, experience, education, and projects.</p>
                                         </li>
                                         <br />
-                                        <li ClassName=""><span className='text-white text-lg'>Skill Endorsements:</span> <p>Other developers or employers can endorse specific skills listed on a developer's profile, validating their expertise.</p>
+                                        <li ClassName="">
+                                            <span className=' text-lg'>Skill Endorsements:</span>
+                                            <p>Other developers or employers can endorse specific skills listed on a developer's profile, validating their expertise.</p>
                                         </li>
                                     </p>
                                 </div>
@@ -50,14 +54,17 @@ function Service() {
                                 </span>
 
                                 <div class="mt-4 md:mx-4 md:mt-0">
-                                    <h1 class="text-2xl font-semibold text-gray-700 capitalize dark:text-white">Employers</h1>
+                                    <h1 class="text-2xl font-semibold text-gray-900 capitalize ">Employers</h1>
 
-                                    <p class="mt-3 text-gray-500 dark:text-gray-300">
-                                        <li ClassName=""><span className='text-white text-lg'>Easy Job Posting:</span>
+                                    <p class="mt-3 text-gray-800">
+                                        <li ClassName="">
+                                            <span className='text-lg'>Easy Job Posting:</span>
                                             <p>Employers can easily post job openings, specifying required skills, experience level, and other relevant details.</p>
                                         </li>
                                         <br />
-                                        <li ClassName=""><span className='text-white text-lg'>Application Management:</span> <p>Employers have access to a dashboard to manage job applications, review developer profiles, and communicate with applicants.</p>
+                                        <li ClassName="">
+                                            <span className='text-lg'>Application Management:</span>
+                                            <p>Employers have access to a dashboard to manage job applications, review developer profiles, and communicate with applicants.</p>
                                         </li>
                                     </p>
                                 </div>
@@ -69,14 +76,16 @@ function Service() {
                                 </span>
 
                                 <div class="mt-4 md:mx-4 md:mt-0">
-                                    <h1 class="text-2xl font-semibold text-gray-700 capitalize dark:text-white">Network and Collaborate</h1>
+                                    <h1 class="text-2xl font-semibold text-gray-900 capitalize ">Network and Collaborate</h1>
 
-                                    <p class="mt-3 text-gray-500 dark:text-gray-300">
-                                        <li ClassName=""><span className='text-white text-lg'>Developer Community:</span>
+                                    <p class="mt-3 text-gray-800">
+                                        <li ClassName="">
+                                            <span className='text-lg'>Developer Community:</span>
                                             <p>The platform fosters a vibrant developer community where members can connect, share knowledge, and collaborate on projects.</p>
                                         </li>
                                         <br />
-                                        <li ClassName=""><span className='text-white text-lg'>Discussion Forums:</span>
+                                        <li ClassName="">
+                                            <span className='text-lg'>Discussion Forums:</span>
                                             <p>Dedicated discussion forums allow developers to seek advice, share insights, and engage in industry-related discussions.</p>
                                         </li>
                                     </p>
