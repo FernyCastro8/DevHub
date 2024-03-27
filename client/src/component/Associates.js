@@ -2,7 +2,7 @@ import React from 'react'
 
 function Associates() {
     return (
-        <div className='h-screen w-screen overflow-auto bg-slate-200 ' >
+        <div className='h-screen w-screen overflow-auto bg-gray-200 ' >
 
             <section className="p-10">
                 <h1 className="text-center font-bold text-2xl">Associates</h1>
