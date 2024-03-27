@@ -5,11 +5,11 @@ import { Link } from 'react-router-dom'
 
 function Register() {
     return (
-        <div className='bg-gradient-to-br from-slate-200 via-slate-600 to-slate-900' >
+        <div className='bg-gradient-to-br from-gray-100 via-gray-300 to-gray-500' >
 
             <div className='flex items-center justify-center h-screen'>
-                <div className=" ">
-                    <div className=''>
+                <div>
+                    <div>
                         <form className="max-w-lg mx-auto bg-slate-900 rounded-3xl border-2 p-6 shadow-lg shadow-gray-400 ">
                             <h1 className='text-white text-3xl flex justify-center pb-5'>Register</h1>
                             <div className='p-5'>
