@@ -13,6 +13,7 @@ import ServicePage from './pages/ServicePage';
 import AssociatesPage from './pages/AssociatesPage';
 import LoginPage from "./pages/LoginPage";
 import RegisterPage from "./pages/RegisterPage";
+import About from './component/About';
 import ContactPage from './pages/ContactPage';
 import NotFoundPage from './pages/NotFoundPage';
 
@@ -29,6 +30,7 @@ function App() {
         <Route path='/service' element={<ServicePage />} />
         <Route path='/associates' element={< AssociatesPage />} />
         <Route path='/contact' element={<ContactPage />} />
+        <Route path='/about' element={<About />} />
         <Route path='*' element={<NotFoundPage />} />s
       </Routes>
 
