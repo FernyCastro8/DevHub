@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom'
 
 function Register() {
     return (
-        <div className='bg-gradient-to-br from-gray-100 via-gray-300 to-gray-500' >
+        <div className='bg-gradient-to-br from-white via-gray-300 to-gray-500' >
 
             <div className='flex items-center justify-center h-screen'>
                 <div>
