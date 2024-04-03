@@ -9,6 +9,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 
+
 // Database connection
 db.once('open', (err) => {
     if (err) throw err;
