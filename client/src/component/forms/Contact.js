@@ -4,22 +4,21 @@ export default function Contact() {
     return (
         <div>
             <div>
-                <section class="bg-slate-800 py-20 lg:py-[120px] overflow-hidden relative z-10">
-                    <div class="container">
-                        <div class="flex flex-wrap lg:justify-between -mx-4">
-                            <div class="w-full pl-14 lg:w-1/2 xl:w-6/12 px-4">
-                                <div class="max-w-[570px] mb-12 lg:mb-0">
-                                    {/* <span class="block mb-4 text-base text-primary font-semibold">
+                <section className="bg-gray-100 h-screen w-screen py-20 lg:py-[120px] overflow-hidden relative z-10">
+                    <div className="container">
+                        <div className="flex flex-wrap lg:justify-between -mx-4">
+                            <div className="w-full pl-14 lg:w-1/2 xl:w-6/12 px-4">
+                                <div className="max-w-[570px] mb-12 lg:mb-0">
+                                    {/* <span className="block mb-4 text-base text-primary font-semibold">
                                         Contact Us
                                     </span> */}
                                     <h2
-                                        class="
-                  text-dark
+                                        className="
+                  text-darks
                   mb-6
                   uppercase
                   font-bold
                   text-[32px]
-                  text-white
                   sm:text-[40px]
                   lg:text-[36px]
                   xl:text-[40px]
@@ -28,7 +27,7 @@ export default function Contact() {
                                     >
                                         GET IN TOUCH WITH US
                                     </h2>
-                                    <p class="text-base text-white leading-relaxed mb-9">
+                                    <p className="text-base indent-8 leading-relaxed mb-9">
                                         Our dedicated team is here to address any questions or issues you may have regarding our services. Your satisfaction is our priority, and we are committed to providing a prompt and helpful response. Please feel free to share your thoughts, and we'll ensure your experience with us is nothing short of excellent.
                                     </p>
 
@@ -36,14 +35,14 @@ export default function Contact() {
                             </div>
 
                             {/* form */}
-                            <div class="w-full lg:w-1/2 xl:w-5/12 px-4">
-                                <div class="bg-white relative rounded-3xl p-8 sm:p-12 shadow-lg">
+                            <div className="w-full lg:w-1/2 xl:w-5/12 px-4">
+                                <div className="bg-white relative rounded-3xl p-8 sm:p-12 shadow-lg">
                                     <form>
-                                        <div class="mb-6">
+                                        <div className="mb-6">
                                             <input
                                                 type="text"
                                                 placeholder="Your Name"
-                                                class="
+                                                className="
                         w-full
                         rounded-lg
                         py-3
@@ -56,11 +55,11 @@ export default function Contact() {
                         "
                                             />
                                         </div>
-                                        <div class="mb-6">
+                                        <div className="mb-6">
                                             <input
                                                 type="email"
                                                 placeholder="Your Email"
-                                                class="
+                                                className="
                         w-full
                         rounded-lg
                         py-3
@@ -73,11 +72,11 @@ export default function Contact() {
                         "
                                             />
                                         </div>
-                                        <div class="mb-6">
+                                        <div className="mb-6">
                                             <input
                                                 type="text"
                                                 placeholder="Your Phone"
-                                                class="
+                                                className="
                         w-full
                         rounded-lg
                         py-3
@@ -90,11 +89,11 @@ export default function Contact() {
                         "
                                             />
                                         </div>
-                                        <div class="mb-6">
+                                        <div className="mb-6">
                                             <textarea
                                                 rows="6"
                                                 placeholder="Your Message"
-                                                class="
+                                                className="
                         w-full
                         rounded-lg
                         py-3
@@ -111,7 +110,7 @@ export default function Contact() {
                                         <div>
                                             <button
                                                 type="submit"
-                                                class="
+                                                className="
 
                         text-white
                         bg-slate-600
@@ -127,7 +126,7 @@ export default function Contact() {
                                         </div>
                                     </form>
                                     <div>
-                                        <span class="absolute -top-10 -right-9 z-[-1]">
+                                        <span className="absolute -top-10 -right-9 z-[-1]">
                                             <svg
                                                 width="100"
                                                 height="100"
@@ -143,7 +142,7 @@ export default function Contact() {
                                                 />
                                             </svg>
                                         </span>
-                                        <span class="absolute -right-10 top-[90px] z-[-1]">
+                                        <span className="absolute -right-10 top-[90px] z-[-1]">
                                             <svg
                                                 width="34"
                                                 height="134"
@@ -363,7 +362,7 @@ export default function Contact() {
                                                 />
                                             </svg>
                                         </span>
-                                        <span class="absolute -left-7 -bottom-7 z-[-1]">
+                                        <span className="absolute -left-7 -bottom-7 z-[-1]">
                                             <svg
                                                 width="107"
                                                 height="134"

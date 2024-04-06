@@ -10,7 +10,6 @@ function Home() {
             <div>
                 <section>
                     <section class="sticky">
-
                         <div class="max-w-lg px-4 sm:pt-24 pt-12 sm:pb-8 mx-auto text-left md:max-w-none md:text-center">
                             {/* <div class='text-center py-4 hidden sm:block'>
                                 <button class="bg-white border border-[#E2E8F0] hover:bg-neutral-200 text-xs font-bold py-2.5 px-4 rounded-full inline-flex items-center">
@@ -76,7 +75,7 @@ function Home() {
                                                         class="inline-flex items-center justify-center text-md font-semibold text-black duration-200 hover:text-blue-500 focus:outline-none focus-visible:outline-gray-600">
                                                         <button type="button"
                                                             class="px-3 py-2 text-xs font-medium text-center inline-flex items-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-                                                            Sing up now &nbsp; →
+                                                            Sign up now &nbsp; →
                                                         </button>
                                                     </Link>
                                                 </div>

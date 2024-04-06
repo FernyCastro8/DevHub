@@ -10,7 +10,6 @@ import img2 from '../../assest/IMG_06.jpg'
 function Home2() {
     return (
         <div className='bg-gray-100'>
-
             {/* Developer section */}
             <div name="developer section" className="m-auto max-w-6xl p-12  ">
                 <div className="flex flex-col md:flex-row">
