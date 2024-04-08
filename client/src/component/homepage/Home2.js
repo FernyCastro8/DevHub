@@ -21,7 +21,7 @@ function Home2() {
                             </p>
                         </div>
                         <div className="flex justify-center m-5">
-                            <Link to="/service">
+                            <Link to="/developer-form">
                                 <button className="shadow-md font-sm py-1.5 px-2 text-white cursor-pointer  bg-blue-600 hover:bg-blue-700 rounded-lg text-sm text-center ">Become a prospect
                                 </button>
                             </Link>
@@ -58,7 +58,7 @@ function Home2() {
                             <p className=' text-md pt-5'>Find your top-tier talent by showcasing your job openings or projects on our platform.</p>
                         </div>
                         <div className="flex justify-center m-5">
-                            <Link to="/service">
+                            <Link to="/employer-form">
                                 <button className="shadow-md font-sm py-1.5 px-2 text-white cursor-pointer bg-blue-600 hover:bg-blue-700 rounded-lg text-sm text-center">Partner with us
                                 </button>
                             </Link>

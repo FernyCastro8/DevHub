@@ -16,6 +16,8 @@ import RegisterPage from "./pages/RegisterPage";
 import About from './component/About';
 import ContactPage from './pages/ContactPage';
 import NotFoundPage from './pages/NotFoundPage';
+import DeveloperForms from './component/forms/DeveloperForm';
+import EmployerForm from './component/forms/EmployerForm';
 
 
 function App() {
@@ -31,6 +33,8 @@ function App() {
         <Route path='/associates' element={< AssociatesPage />} />
         <Route path='/contact' element={<ContactPage />} />
         <Route path='/about' element={<About />} />
+        <Route path='/developer-form' element={<DeveloperForms />} />
+        <Route path='/employer-form' element={<EmployerForm />} />
         <Route path='*' element={<NotFoundPage />} />s
       </Routes>
 
