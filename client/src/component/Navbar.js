@@ -7,7 +7,7 @@ import logo from "../assest/DevHub-logo-emoji.png"
 const links = [
     {
         id: 0,
-        to: '/home',
+        to: '/',
         element: 'Home'
     },
     {
@@ -68,10 +68,10 @@ function Navbar() {
                                     <FaTimes size={25} />
                                 </div>
 
-                                {links.map(({ id, target, element }) => (
+                                {links.map(({ id, to, element }) => (
                                     <li key={id} className="text-white text-lg px-4 py-5 cursor-pointer hover:scale-110 duration-200" >
                                         <NavLink
-                                            to={target}
+                                            to={to}
                                             spy={true}
                                             smooth={true}
                                             offset={-70}
