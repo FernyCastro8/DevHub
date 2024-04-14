@@ -5,10 +5,10 @@ function Login() {
     return (
         <div className='bg-gradient-to-br from-white via-gray-300 to-gray-500' >
 
-            <div className='flex items-center justify-center h-screen'>
+            <div className='flex items-center justify-center h-screen  overflow-auto'>
                 <div>
                     <div>
-                        <form className="max-w-lg mx-auto bg-slate-900 rounded-3xl border-2 p-6 shadow-lg shadow-gray-400 ">
+                        <form className="max-w-lg mx-auto bg-slate-900 rounded-3xl border-2 p-6  shadow-lg shadow-gray-400 ">
                             <h1 className='text-white text-3xl flex justify-center pb-5'>Login</h1>
                             <div className=' p-5'>
                                 <div className="mb-5">

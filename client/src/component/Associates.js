@@ -2,7 +2,7 @@ import React from 'react'
 
 function Associates() {
     return (
-        <div className='h-screen w-screen overflow-auto bg-gray-100 ' >
+        <div className='h-screen w-screen bg-gray-100 overflow-auto' >
 
             <section className="p-10">
                 <h1 className="text-center font-bold text-2xl">Associates</h1>
@@ -24,7 +24,7 @@ function Associates() {
                 </form>
 
 
-                <div className="grid justify-center md:grid-cols-2 lg:grid-cols-3 gap-5 lg:gap-7 my-10">
+                <div className="grid justify-center grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-5 lg:gap-7 my-10">
                     {/* Card 1 */}
                     <div className="bg-white rounded-lg border shadow-md max-w-xs md:max-w-none overflow-hidden">
                         {/* <img className="h-56 lg:h-60 w-full object-cover"

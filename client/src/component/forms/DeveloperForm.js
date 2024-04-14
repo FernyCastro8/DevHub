@@ -2,7 +2,7 @@ import React from 'react'
 
 function DeveloperForm() {
     return (
-        <div className="h-screen w-screen bg-gray-100 ">
+        <div className="h-screen w-screen bg-gray-100 pb-16 overflow-auto ">
             <section class="developer'form">
                 <div class="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16">
                     <h1 class="mb-6 text-4xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl">

@@ -10,7 +10,7 @@ import { BsBriefcaseFill } from "react-icons/bs"; // suitcase icon
 function Service() {
     return (
 
-        <div id="services" className="section relative pt-20 pb-8 md:pt-16 md:pb-0 bg-gray-100 h-screen w-screen ">
+        <div id="services" className="section relative pt-20 pb-12 md:pt-16 md:pb-10 bg-gray-100 h-screen w-screen overflow-auto">
             <div className="container xl:max-w-6xl mx-auto px-4">
 
                 <header className="text-center mx-auto mb-12 lg:px-20">
