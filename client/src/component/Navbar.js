@@ -23,6 +23,7 @@ const links = [
 ];
 
 function Navbar() {
+
     const [nav, setNav] = useState(false);
 
     return (
@@ -58,7 +59,7 @@ function Navbar() {
                     </div>
 
                     {/*         handle mobile   ||  hamburger menu bar        */}
-                    <div onClick={() => setNav(!nav)}
+                    <div
                         className="cursor-pointer pr-4  z-10 text-gray-400 md:hidden flex items-center ">
                         <div className="px-4">
                             <NavLink to="/register">
@@ -66,6 +67,7 @@ function Navbar() {
                             </NavLink>
                         </div>
 
+                        {/*     Ternary expression   */}
                         {nav ? <FaTimes size={25} /> : <FaBars size={25} />}
 
                         {nav && (
@@ -88,6 +90,7 @@ function Navbar() {
                                         </NavLink>
                                     </li>
                                 ))}
+
                                 <li className="mt-5">
                                     <NavLink to="/register">
                                         <button type="button" className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-3 focus:outline-none font-medium rounded-lg text-sm px-4 py-2 text-center dark:bg-slate-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 dark:shadow-lg dark:shadow-slate-600/20">Get started</button>
