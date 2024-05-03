@@ -58,7 +58,7 @@ function Navbar() {
                     </div>
 
                     {/*         handle mobile   ||  hamburger menu bar        */}
-                    <div onClick={() => setNav(!nav)}
+                    <div
                         className="cursor-pointer pr-4  z-10 text-gray-400 md:hidden flex items-center ">
                         <div className="px-4">
                             <NavLink to="/register">
@@ -66,6 +66,7 @@ function Navbar() {
                             </NavLink>
                         </div>
 
+                        {/*     Ternary expression */}
                         {nav ? <FaTimes size={25} /> : <FaBars size={25} />}
 
                         {nav && (
