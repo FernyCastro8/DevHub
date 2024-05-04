@@ -1,6 +1,13 @@
 import React from 'react'
 
+// handle submit function to prevent browser from refreshing
+const handleSubmit = (eventObj) => {
+    eventObj.preventDefault()
+}
+
+
 function DeveloperForm() {
+
     return (
         <div className="h-screen w-screen bg-gray-100 pb-16 overflow-auto ">
             <section class="developer'form">
@@ -20,7 +27,8 @@ function DeveloperForm() {
             {/*      Form    */}
             <div className="">
                 < div className="max-w-2xl mx-auto pt-5 border-2 p-6 rounded-3xl " >
-                    <form>
+
+                    <form onSubmit={handleSubmit} >
                         <div className="grid xl:grid-cols-2 xl:gap-6">
                             <div className="relative z-0 mb-6 w-full group">
                                 <input type="text" name="floating_first_name" id="floating_first_name" className="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none  dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required />

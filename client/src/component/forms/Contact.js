@@ -12,8 +12,7 @@ export default function Contact() {
                                     {/* <span className="block mb-4 text-base text-primary font-semibold">
                                         Contact Us
                                     </span> */}
-                                    <h2
-                                        className="
+                                    <h2 className="
                   text-darks
                   mb-6
                   uppercase

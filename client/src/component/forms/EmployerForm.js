@@ -1,5 +1,11 @@
 import React from 'react'
 
+// handle submit function to prevent browser from refreshing
+const handleSubmit = (eventObj) => {
+    eventObj.preventDefault()
+}
+
+
 function EmployerForm() {
     return (
         <div className="h-screen w-screen bg-gray-100 pb-16 overflow-auto">
@@ -19,7 +25,8 @@ function EmployerForm() {
             {/*      Form    */}
             <div className="">
                 < div className="max-w-2xl mx-auto pt-5 border-2 p-6 rounded-3xl " >
-                    <form>
+
+                    <form onSubmit={handleSubmit}>
                         <div className="grid xl:grid-cols-2 xl:gap-6">
 
                             <div className="relative z-0 mb-6 w-full group">
