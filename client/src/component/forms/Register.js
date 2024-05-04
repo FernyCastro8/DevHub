@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom'
-
+import { useState } from 'react';
 
 
 
@@ -53,20 +53,20 @@ function Register() {
 
                             <div className='p-5'>
                                 <div className="mb-5">
-                                    <label for="email" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">First name</label>
+                                    <label for="text" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">First name</label>
                                     <input type="text"
-                                        name="first-name"
+                                        name="firstName"
                                         value={formData.firstName}  // Value to controlled by state
                                         onChange={handleChange} // Handle change event
                                         className="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 px-14 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light"
                                         placeholder="Enter your First name"
-                                        autoComplete="name" required
+                                        autoComplete="" required
                                     />
                                 </div> <div className="mb-5">
                                     <label for="text" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Last name</label>
                                     <input
                                         type="text"
-                                        name="last-name"
+                                        name="lastName"
                                         value={formData.lastName}  // Value to controlled by state
                                         onChange={handleChange} // Handle change event
                                         className="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 px-14 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light"
