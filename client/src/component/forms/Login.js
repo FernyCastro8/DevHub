@@ -6,7 +6,7 @@ import { useState } from 'react';
 
 function Login() {
 
-    // State to hold the form data
+    // State to hold the form data or input
     const [formData, setFormData] = useState({
         email: '',
         password: ''
@@ -17,15 +17,16 @@ function Login() {
         const { name, value } = e.target;
 
         // Update the form data state with the new value
-        setFormData(prevState => ({
-            ...prevState,
+        setFormData(formData => ({
+            ...formData,
             [name]: value // Dynamically set the property based on input name
         }));
     }
 
     // Function to handle form submission
     const handleSubmit = (e) => {
-        e.preventDefault(); // Prevent default form submission behavior (page reload)
+        // Prevent default form submission behavior (page reload)
+        e.preventDefault();
 
         // Do something with the form data, like submit it to an API or handle it locally
         console.log('Submitted data:', formData);
@@ -49,6 +50,7 @@ function Login() {
                             className="max-w-lg mx-auto bg-slate-900 rounded-3xl border-2 p-6  shadow-lg shadow-gray-400 ">
 
                             <h1 className='text-white text-3xl flex justify-center pb-5'>Login</h1>
+
                             <div className='p-5'>
                                 <div className="mb-5">
                                     <label for="email" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your email</label>
