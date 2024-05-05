@@ -71,7 +71,6 @@ function EmployerForm() {
                             <div className="relative z-0 mb-6 w-full group">
                                 <input
                                     type="text"
-                                    id="floating_company"
                                     name="companyName"
                                     value={formData.companyName}  // Value to controlled by state
                                     onChange={handleChange} // Handle change event
@@ -84,7 +83,6 @@ function EmployerForm() {
                             <div className="relative z-0 mb-6 w-full group">
                                 <input
                                     type="text"
-                                    id="floating_last_name"
                                     name="positionVacancy"
                                     value={formData.positionVacancy}  // Value to controlled by state
                                     onChange={handleChange} // Handle change event
@@ -97,7 +95,6 @@ function EmployerForm() {
                             <div className="relative z-0 mb-6 w-full group">
                                 <input
                                     type="number"
-                                    id="floating_last_name"
                                     name="salary"
                                     value={formData.salary}  // Value to controlled by state
                                     onChange={handleChange} // Handle change event
@@ -110,7 +107,6 @@ function EmployerForm() {
                             <div className="relative z-0 mb-6 w-full group">
                                 <input
                                     type="text"
-                                    id="floating_phone"
                                     name="employmentType"
                                     value={formData.employmentType}  // Value to controlled by state
                                     onChange={handleChange} // Handle change event
@@ -124,7 +120,6 @@ function EmployerForm() {
                                 <input
                                     type="tel"
                                     // pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}-[0-9]{4}"
-                                    id="floating_phone"
                                     name="phoneNumber"
                                     value={formData.phoneNumber}  // Value to controlled by state
                                     onChange={handleChange} // Handle change event
@@ -162,7 +157,6 @@ function EmployerForm() {
                         <div className="relative z-0 mb-6 w-full group">
                             <textarea
                                 type="text"
-                                id="floating_company"
                                 name="JobDescription"
                                 value={formData.JobDescription}  // Value to controlled by state
                                 onChange={handleChange} // Handle change event
