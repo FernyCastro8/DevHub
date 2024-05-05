@@ -67,7 +67,10 @@ function Navbar() {
                             </NavLink>
                         </div>
 
-                        {/*     Ternary expression   */}
+
+
+                        {/*     Ternary expression */}
+
                         {nav ? <FaTimes size={25} /> : <FaBars size={25} />}
 
                         {nav && (
