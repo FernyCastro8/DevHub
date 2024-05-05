@@ -1,12 +1,54 @@
 import React from 'react'
+import { useState } from 'react';
 
-// handle submit function to prevent browser from refreshing
-const handleSubmit = (eventObj) => {
-    eventObj.preventDefault()
-}
 
 
 function EmployerForm() {
+
+    // State to hold the form data or input
+    const [formData, setFormData] = useState({
+        companyName: '',
+        positionVacancy: '',
+        salary: '',
+        employmentType: '',
+        phoneNumber: '',
+        email: '',
+        location: '',
+        JobDescription: ''
+    });
+
+    // Function to handle changes in input fields
+    const handleChange = (e) => {
+        const { name, value } = e.target;
+        setFormData(formData => ({
+            ...formData,
+            [name]: value   // Dynamically set the property based on input name
+        }));
+    };
+
+    // Function to handle form submission
+    const handleSubmit = (e) => {
+        // Prevent default form submission behavior (page reload)
+        e.preventDefault();
+
+        // Do something with the form data, like submit it to an API or handle it locally
+        console.log('Submitted data:', formData);
+
+        // Reset the form fields after submission
+        setFormData({
+            companyName: '',
+            positionVacancy: '',
+            salary: '',
+            employmentType: '',
+            phoneNumber: '',
+            email: '',
+            location: '',
+            JobDescription: ''
+        });
+    };
+
+
+
     return (
         <div className="h-screen w-screen bg-gray-100 pb-16 overflow-auto">
             <section class="developer'form">
@@ -27,13 +69,14 @@ function EmployerForm() {
                 < div className="max-w-2xl mx-auto pt-5 border-2 p-6 rounded-3xl overflow-auto" >
 
                     <form onSubmit={handleSubmit}>
-
                         <div className="grid xl:grid-cols-2 xl:gap-6">
                             <div className="relative z-0 mb-6 w-full group">
                                 <input
                                     type="text"
                                     id="floating_company"
-                                    name="floating_company"
+                                    name="companyName"
+                                    value={formData.companyName}  // Value to controlled by state
+                                    onChange={handleChange} // Handle change event
                                     className="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
                                     placeholder=" " required />
                                 <label for="floating_company"
@@ -44,7 +87,9 @@ function EmployerForm() {
                                 <input
                                     type="text"
                                     id="floating_last_name"
-                                    name="floating_last_name"
+                                    name="positionVacancy"
+                                    value={formData.positionVacancy}  // Value to controlled by state
+                                    onChange={handleChange} // Handle change event
                                     className="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none  dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
                                     placeholder=" " required />
                                 <label for="floating_last_name"
@@ -55,7 +100,9 @@ function EmployerForm() {
                                 <input
                                     type="number"
                                     id="floating_last_name"
-                                    name="floating_last_name"
+                                    name="salary"
+                                    value={formData.salary}  // Value to controlled by state
+                                    onChange={handleChange} // Handle change event
                                     className="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none  dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
                                     placeholder=" " required />
                                 <label for="floating_last_name"
@@ -67,7 +114,9 @@ function EmployerForm() {
                                     type="text"
                                     pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
                                     id="floating_phone"
-                                    name="floating_phone"
+                                    name="employmentType"
+                                    value={formData.employmentType}  // Value to controlled by state
+                                    onChange={handleChange} // Handle change event
                                     className="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none  dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
                                     placeholder=" " required />
                                 <label for="floating_phone"
@@ -79,7 +128,9 @@ function EmployerForm() {
                                     type="tel"
                                     pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
                                     id="floating_phone"
-                                    name="floating_phone"
+                                    name="phoneNumber"
+                                    value={formData.phoneNumber}  // Value to controlled by state
+                                    onChange={handleChange} // Handle change event
                                     className="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none  dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
                                     placeholder=" " required />
                                 <label for="floating_phone"
@@ -89,7 +140,9 @@ function EmployerForm() {
                             <div className="relative z-0 mb-6 w-full group">
                                 <input
                                     type="email"
-                                    name="floating_email"
+                                    name="email"
+                                    value={formData.email}  // Value to controlled by state
+                                    onChange={handleChange} // Handle change event
                                     className="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none  dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
                                     placeholder=" " required />
                                 <label for="floating_email"
@@ -99,33 +152,13 @@ function EmployerForm() {
                             <div className="relative z-0 mb-6 w-full group">
                                 <input
                                     type="email"
-                                    name="floating_email"
+                                    name="location"
                                     className="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none  dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
                                     placeholder=" " required />
                                 <label for="floating_email"
                                     className="absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Location</label>
                             </div>
 
-                            {/* <div className="relative z-0 mb-6 w-full group">
-                                <input
-                                    type="text"
-                                    id="floating_first_name"
-                                    name="floating_first_name"
-                                    className="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none  dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
-                                    placeholder=" " required />
-                                <label for="floating_first_name"
-                                    className="absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">First name</label>
-                            </div>
-                            <div className="relative z-0 mb-6 w-full group">
-                                <input
-                                    type="text"
-                                    id="floating_last_name"
-                                    name="floating_last_name"
-                                    className="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none  dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
-                                    placeholder=" " required />
-                                <label for="floating_last_name"
-                                    className="absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Last name</label>
-                            </div> */}
                         </div>
 
 
@@ -133,7 +166,9 @@ function EmployerForm() {
                             <textarea
                                 type="text"
                                 id="floating_company"
-                                name="floating_company"
+                                name="JobDescription"
+                                value={formData.JobDescription}  // Value to controlled by state
+                                onChange={handleChange} // Handle change event
                                 className="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
                                 placeholder=" " required />
                             <label for="floating_company"
