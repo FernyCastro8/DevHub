@@ -61,6 +61,8 @@ function EmployerForm() {
                 </div>
             </section>
 
+            <h1 className="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-4 mb-3 text-2xl font-bold tracking-tight leading-none text-gray-800 md:text-4xl lg:text-2xl">Submit a form and post a job listing on our Community</h1>
+
             {/*      Form    */}
             <div className="">
                 < div className="max-w-2xl mx-auto pt-5 border-2 p-6 rounded-3xl overflow-auto" >
