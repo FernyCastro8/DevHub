@@ -17,6 +17,11 @@ const links = [
     },
     {
         id: 2,
+        to: '/jobs',
+        element: 'Jobs'
+    },
+    {
+        id: 3,
         to: '/associates',
         element: 'Associates'
     },
