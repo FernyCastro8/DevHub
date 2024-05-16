@@ -66,12 +66,13 @@ function JobsPage() {
                                     <h2 className="text-2xl">Job Name:</h2>
                                     <h3 className="text-ms">Company: </h3>
                                     <ul className="mt-4">
-                                        <li><h3 className="text-md">Location: </h3></li>
-                                        <li><h3 className="text-md">Salary: $ </h3></li>
+                                        <h3 className="text-md">Location: </h3>
+                                        <h3 className="text-md ">Salary: $ </h3>
                                     </ul>
-                                    <h3 className="text-md mt-4">Contact information:
-                                        <li className='text-sm'>Email:  </li>
-                                        <li className='text-sm'>Phone:  </li></h3>
+                                    <h3 className="text-md mt-4">Contact:
+                                        <h3 className='text-sm pl-2'>Email:  </h3>
+                                        <h3 className='text-sm pl-2'>Phone:  </h3>
+                                    </h3>
 
                                     <h3 className="text-md mt-4">Details:</h3>
                                     <p className="text-md ">Example job details text goes here.</p>

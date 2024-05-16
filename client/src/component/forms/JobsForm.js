@@ -96,7 +96,7 @@ function JobsForm() {
 
                             <div className="relative z-0 mb-6 w-full group">
                                 <input
-                                    type="number"
+                                    type="text"
                                     name="salary"
                                     value={formData.salary}  // Value to controlled by state
                                     onChange={handleChange} // Handle change event
