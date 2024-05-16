@@ -26,7 +26,7 @@ function Service() {
                     visibility: visible; animation-duration: 1s; animation-name: fadeInUp
                     " data-wow-duration="1s" >
 
-                        <div className="py-8 px-12 mb-12 bg-gray-50 border-b border-gray-100 transform transition duration-300 ease-in-out hover:-translate-y-2">
+                        <div className="py-8 px-12 mb-12 bg-slate-200 border-b border-gray-100 transform transition duration-300 ease-in-out hover:-translate-y-2">
                             <div className="inline-block text-gray-900 mb-4">
                                 <MdOutlineComputer size={30} />
                             </div>
@@ -41,7 +41,7 @@ function Service() {
                     visibility: visible; animation-duration: 1s; animation-delay: 0.1s; animation-name: fadeInUp;
                     " data-wow-duration="1s" data-wow-delay=".1s">
 
-                        <div className="py-8 px-12 mb-12 bg-gray-50 border-b border-gray-100 transform transition duration-300 ease-in-out hover:-translate-y-2">
+                        <div className="py-8 px-12 mb-12 bg-slate-200 border-b border-gray-100 transform transition duration-300 ease-in-out hover:-translate-y-2">
                             <div className="inline-block text-gray-900 mb-4">
                                 <BsBriefcaseFill size={30} />
                             </div>
@@ -54,7 +54,7 @@ function Service() {
                     visibility: visible; animation-duration: 1s; animation-delay: 0.3s; animation-name: fadeInUp
                     " data-wow-duration="1s" data-wow-delay=".3s">
 
-                        <div className="py-8 px-12 mb-12 bg-gray-50 border-b border-gray-100 transform transition duration-300 ease-in-out hover:-translate-y-2">
+                        <div className="py-8 px-12 mb-12 bg-slate-200 border-b border-gray-100 transform transition duration-300 ease-in-out hover:-translate-y-2">
                             <div className="inline-block text-gray-900 mb-4">
                                 <LuNetwork size={30} />
                             </div>
