@@ -1,8 +1,25 @@
-import mongoose from 'mongoose'
-import { Schema } from 'mongoose'
+const mongoose = require('mongoose');
+const { Schema } = require('mongoose');
 
 
-const developerSchema = new Schema({
+// Funtion to validate email
+const validateEmail = (email) => {
+    return String(email)
+        .toLowerCase()
+        .match(
+            /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|.(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+        );
+};
+
+// // Test the validateEmail function
+// const testEmail = "test@example.com";
+// const isValidEmail = validateEmail(testEmail);
+
+// console.log(`Email: ${testEmail}, Valid: ${isValidEmail !== null}`);
+
+
+
+const developerSchema = new mongoose.Schema({
     firstname: {
         type: String,
         required: true
@@ -14,7 +31,8 @@ const developerSchema = new Schema({
     email: {
         type: String,
         required: true,
-        unique: true
+        unique: true,
+        validated: [validateEmail, 'You must enter a valid email address.']
     },
     phoneNumber: {
         type: Number,
@@ -43,4 +61,4 @@ const developerSchema = new Schema({
 // Creating the Developer model
 const Developer = mongoose.model('developer', developerSchema);
 
-export default Developer;
+module.exports = Developer;

@@ -5,7 +5,7 @@ const bcrypt = required('bcrypt');
 
 
 // Creating a user Schema
-const userSchema = new Schema({
+const userSchema = new mongoose.Schema({
     username: {
         type: String,
         required: true,
@@ -87,6 +87,6 @@ userSchema.methods.validatePassword = async function (form_password) {
 }
 
 
-const User = model('user', userSchema);
+const User = mongoose.model('user', userSchema);
 
-export default User;
+module.exports = User;
