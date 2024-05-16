@@ -30,7 +30,7 @@ function JobsPage() {
 
 
                 <div>
-                    <div className="grid grid-cols-1 gap-4 p-12 md:grid-cols-2 min-h-screen px-2 ">
+                    <div className="grid  gap-4 p-10 md:grid-cols-2 min-h-screen px-2 ">
                         {/* <!-- Left Column --> */}
                         <div className="overflow-y-auto max-h-600px md:max-h-screen min-h-130vh ">
                             <div className=" rounded-3xl p-4 ">

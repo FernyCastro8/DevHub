@@ -44,11 +44,13 @@ function Associates() {
 
                         <div className="p-3">
                             <span className="text-lg text-primary">Name:</span>
-                            <h3 className="font-semibold text-md leading-6 text-gray-700 my-2">Skill</h3>
-                            <h3 className="text-md text-primary">Education</h3>
-
+                            <h3 className="font-semibold text-md leading-6 text-gray-700 my-2">Occupation:</h3>
+                            <h3 className="text-md text-primary">Contact:
+                                <h4 className="text-sm pl-2">Email:</h4>
+                                <h4 className="text-sm pl-2">Phone:</h4></h3>
+                            <h3 className="text-md mt-3 text-primary">Skills:</h3>
                             <p className="paragraph-normal text-gray-600">
-                                Some Text ...
+                                add skills ...
                             </p>
                         </div>
                     </div>
@@ -67,12 +69,14 @@ function Associates() {
                         </div>
 
                         <div className="p-3">
-                            <span className="text-sm text-primary">Date</span>
-                            <h3 className="font-semibold text-xl leading-6 text-gray-700 my-2">
-                                Some Text
-                            </h3>
+                            <span className="text-lg text-primary">Name:</span>
+                            <h3 className="font-semibold text-md leading-6 text-gray-700 my-2">Occupation:</h3>
+                            <h3 className="text-md text-primary">Contact:
+                                <h4 className="text-sm pl-2">Email:</h4>
+                                <h4 className="text-sm pl-2">Phone:</h4></h3>
+                            <h3 className="text-md mt-3 text-primary">Skills:</h3>
                             <p className="paragraph-normal text-gray-600">
-                                Some Text ...
+                                add skills ...
                             </p>
                         </div>
                     </div>
@@ -91,12 +95,14 @@ function Associates() {
                         </div>
 
                         <div className="p-3">
-                            <span className="text-sm text-primary">Date</span>
-                            <h3 className="font-semibold text-xl leading-6 text-gray-700 my-2">
-                                Some Text
-                            </h3>
+                            <span className="text-lg text-primary">Name:</span>
+                            <h3 className="font-semibold text-md leading-6 text-gray-700 my-2">Occupation:</h3>
+                            <h3 className="text-md text-primary">Contact:
+                                <h4 className="text-sm pl-2">Email:</h4>
+                                <h4 className="text-sm pl-2">Phone:</h4></h3>
+                            <h3 className="text-md mt-3 text-primary">Skills:</h3>
                             <p className="paragraph-normal text-gray-600">
-                                Some Text ...
+                                add skills ...
                             </p>
                         </div>
                     </div>
