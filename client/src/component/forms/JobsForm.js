@@ -1,12 +1,12 @@
 import React, { useState } from 'react'
 
 
-function EmployerForm() {
+function JobsForm() {
 
     // State to hold the form data or input
     const [formData, setFormData] = useState({
         companyName: '',
-        positionVacancy: '',
+        jobName: '',
         salary: '',
         employmentType: '',
         phoneNumber: '',
@@ -35,7 +35,7 @@ function EmployerForm() {
         // Reset the form fields after submission
         setFormData({
             companyName: '',
-            positionVacancy: '',
+            jobName: '',
             salary: '',
             employmentType: '',
             phoneNumber: '',
@@ -84,14 +84,14 @@ function EmployerForm() {
                             <div className="relative z-0 mb-6 w-full group">
                                 <input
                                     type="text"
-                                    name="positionVacancy"
-                                    value={formData.positionVacancy}  // Value to controlled by state
+                                    name="jobName"
+                                    value={formData.jobName}  // Value to controlled by state
                                     onChange={handleChange} // Handle change event
                                     className="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none  dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
                                     placeholder=" " required />
                                 <label
-                                    for="positionVacancy"
-                                    className="absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Position vacancy</label>
+                                    for="jobName"
+                                    className="absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Job name</label>
                             </div>
 
                             <div className="relative z-0 mb-6 w-full group">
@@ -193,4 +193,4 @@ function EmployerForm() {
     )
 }
 
-export default EmployerForm
+export default JobsForm

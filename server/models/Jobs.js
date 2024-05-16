@@ -8,6 +8,14 @@ const JobsSchema = new Schema({
         required: true,
         unique: true
     },
+    email: {
+        type: String,
+        required: true,
+    },
+    phoneNumber: {
+        type: Number,
+        required: true,
+    },
     jobname: {
         type: String,
         required: true,
@@ -28,9 +36,9 @@ const JobsSchema = new Schema({
         type: String,
         require: true
     },
-    position: {
+    employmentType: {
         type: String,
-        required: true,
+        required: true
     },
 },
     {

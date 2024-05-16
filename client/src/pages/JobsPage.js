@@ -63,12 +63,16 @@ function JobsPage() {
 
                                 <div className=" mb-4 p-4 border-2 border-gray-200 md:p-3 dark:border-gray-200 rounded-3xl">
                                     {/* <!-- Job Details --> */}
-                                    <h2 className="text-2xl">Job Name</h2>
+                                    <h2 className="text-2xl">Job Name:</h2>
                                     <h3 className="text-ms">Company: </h3>
                                     <ul className="mt-4">
                                         <li><h3 className="text-md">Location: </h3></li>
                                         <li><h3 className="text-md">Salary: $ </h3></li>
                                     </ul>
+                                    <h3 className="text-md mt-4">Contact information:
+                                        <li className='text-sm'>Email:  </li>
+                                        <li className='text-sm'>Phone:  </li></h3>
+
                                     <h3 className="text-md mt-4">Details:</h3>
                                     <p className="text-md ">Example job details text goes here.</p>
 
