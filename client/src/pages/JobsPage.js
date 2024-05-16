@@ -30,7 +30,7 @@ function JobsPage() {
 
 
                 <div>
-                    <div className="grid grid-cols-1 gap-4 p-12 md:grid-cols-2 min-h-screen px-2 ">
+                    <div className="grid  gap-4 p-10 md:grid-cols-2 min-h-screen px-2 ">
                         {/* <!-- Left Column --> */}
                         <div className="overflow-y-auto max-h-600px md:max-h-screen min-h-130vh ">
                             <div className=" rounded-3xl p-4 ">
@@ -66,12 +66,13 @@ function JobsPage() {
                                     <h2 className="text-2xl">Job Name:</h2>
                                     <h3 className="text-ms">Company: </h3>
                                     <ul className="mt-4">
-                                        <li><h3 className="text-md">Location: </h3></li>
-                                        <li><h3 className="text-md">Salary: $ </h3></li>
+                                        <h3 className="text-md">Location: </h3>
+                                        <h3 className="text-md ">Salary: $ </h3>
                                     </ul>
-                                    <h3 className="text-md mt-4">Contact information:
-                                        <li className='text-sm'>Email:  </li>
-                                        <li className='text-sm'>Phone:  </li></h3>
+                                    <h3 className="text-md mt-4">Contact:
+                                        <h3 className='text-sm pl-2'>Email:  </h3>
+                                        <h3 className='text-sm pl-2'>Phone:  </h3>
+                                    </h3>
 
                                     <h3 className="text-md mt-4">Details:</h3>
                                     <p className="text-md ">Example job details text goes here.</p>

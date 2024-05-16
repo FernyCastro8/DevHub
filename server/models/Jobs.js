@@ -44,9 +44,9 @@ const JobsSchema = new Schema({
     {
         timestamps: true // This will add createdAt and updatedAt fields
 
-    })
+    });
 
-// Creating the model
+// Creating the Jobs model
 const Jobs = mongoose.model('jobs', JobsSchema);
 
 export default Jobs;
