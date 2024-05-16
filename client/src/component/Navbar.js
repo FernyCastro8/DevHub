@@ -17,6 +17,11 @@ const links = [
     },
     {
         id: 2,
+        to: '/jobs',
+        element: 'Jobs'
+    },
+    {
+        id: 3,
         to: '/associates',
         element: 'Associates'
     },
@@ -67,7 +72,10 @@ function Navbar() {
                             </NavLink>
                         </div>
 
-                        {/*     Ternary expression   */}
+
+
+                        {/*     Ternary expression */}
+
                         {nav ? <FaTimes size={25} /> : <FaBars size={25} />}
 
                         {nav && (

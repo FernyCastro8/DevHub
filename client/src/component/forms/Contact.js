@@ -4,7 +4,7 @@ export default function Contact() {
     return (
         <div>
             <div>
-                <section className="bg-gray-100 h-screen w-screen py-20 lg:py-[120px] overflow-hidden relative z-10">
+                <section className="bg-gray-100 h-screen w-screen py-20 lg:py-[120px] overflow-auto relative z-10">
                     <div className="container">
                         <div className="flex flex-wrap lg:justify-between -mx-4">
                             <div className="w-full pl-14 lg:w-1/2 xl:w-6/12 px-4">
