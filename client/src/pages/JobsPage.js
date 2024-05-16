@@ -30,7 +30,7 @@ function JobsPage() {
 
 
                 <div>
-                    <div className="grid grid-cols-1 gap-4 p-12 md:grid-cols-2 min-h-screen px-2">
+                    <div className="grid grid-cols-1 gap-4 p-12 md:grid-cols-2 min-h-screen px-2 ">
                         {/* <!-- Left Column --> */}
                         <div className="overflow-y-auto max-h-600px md:max-h-screen min-h-130vh ">
                             <div className=" rounded-3xl p-4 ">
@@ -58,17 +58,21 @@ function JobsPage() {
 
 
                         {/* <!-- Right Column --> */}
-                        <div className="overflow-y-auto max-h-600px md:max-h-screen">
+                        <div className="overflow-y-auto max-h-600px md:max-h-screen drop-shadow-sm">
                             <div className="rounded-3xl p-4 ">
 
                                 <div className=" mb-4 p-4 border-2 border-gray-200 md:p-3 dark:border-gray-200 rounded-3xl">
                                     {/* <!-- Job Details --> */}
-                                    <h2 className="text-2xl">Job Name</h2>
+                                    <h2 className="text-2xl">Job Name:</h2>
                                     <h3 className="text-ms">Company: </h3>
                                     <ul className="mt-4">
                                         <li><h3 className="text-md">Location: </h3></li>
                                         <li><h3 className="text-md">Salary: $ </h3></li>
                                     </ul>
+                                    <h3 className="text-md mt-4">Contact information:
+                                        <li className='text-sm'>Email:  </li>
+                                        <li className='text-sm'>Phone:  </li></h3>
+
                                     <h3 className="text-md mt-4">Details:</h3>
                                     <p className="text-md ">Example job details text goes here.</p>
 
@@ -91,4 +95,4 @@ function JobsPage() {
     )
 }
 
-export default JobsPage
+export default JobsPage;

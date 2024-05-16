@@ -89,4 +89,4 @@ userSchema.methods.validatePassword = async function (form_password) {
 
 const User = model('user', userSchema);
 
-module.export = User;
+export default User;
